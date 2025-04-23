@@ -88,6 +88,37 @@
 
   <a class="button" href="index.html#blog">← Back to Blog</a>
 </article>
+<!-- 💌 Subscribe Section -->
+<section style="margin: 50px auto; max-width: 700px; text-align: center; background: #fce4ec; padding: 30px; border-radius: 12px;">
+  <h3>Subscribe for Updates 💌</h3>
+  <form action="https://formspree.io/f/your-form-id" method="POST">
+    <input type="email" name="email" placeholder="Enter your email" required
+      style="padding: 12px; width: 80%; max-width: 400px; border-radius: 6px; border: none;">
+    <br><br>
+    <button type="submit" style="padding: 10px 20px; background: #4CAF50; color: white; border: none; border-radius: 6px; font-weight: bold;">
+      Subscribe
+    </button>
+  </form>
+</section>
+
+<!-- 💬 Comment Section -->
+<section style="margin: 50px auto; max-width: 700px;">
+  <h3 style="text-align: center;">Comments 💬</h3>
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://yourusername.github.io/slim-by-linda/blog1.html';
+      this.page.identifier = 'blog1';
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://YOUR-DISQUS-SHORTNAME.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the comments.</noscript>
+</section>
 
 <footer>
   &copy; 2025 Slim by Linda. More love, more healing 💗
