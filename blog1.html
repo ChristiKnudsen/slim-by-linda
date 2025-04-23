@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>5 Things I Learned in My First Month – Slim by Linda</title>
   <style>
     body {
@@ -59,6 +60,26 @@
       color: #666;
       font-size: 0.9em;
     }
+
+    /* Mobile-friendly styling */
+    @media (max-width: 600px) {
+      article {
+        padding: 15px;
+        margin: 20px 10px;
+      }
+
+      a.button {
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      section form input,
+      section form button {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+      }
+    }
   </style>
 </head>
 <body>
@@ -88,6 +109,7 @@
 
   <a class="button" href="index.html#blog">← Back to Blog</a>
 </article>
+
 <!-- 💌 Subscribe Section -->
 <section style="margin: 50px auto; max-width: 700px; text-align: center; background: #fce4ec; padding: 30px; border-radius: 12px;">
   <h3>Subscribe for Updates 💌</h3>
@@ -100,5 +122,12 @@
     </button>
   </form>
 </section>
+
+<footer>
+  &copy; 2025 Slim by Linda. More love, more healing 💗
+</footer>
+
+</body>
+</html>
 
 
