@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog – Slim by Linda</title>
   <style>
     body {
@@ -17,6 +18,10 @@
       color: white;
       padding: 60px 20px;
       text-align: center;
+    }
+
+    nav {
+      margin-top: 20px;
     }
 
     nav a {
@@ -71,6 +76,23 @@
       font-size: 0.9em;
       color: #666;
     }
+
+    /* 🌿 Mobile-friendly tweaks */
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .blog-post {
+        padding: 15px;
+      }
+
+      .button {
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
   </style>
 </head>
 <body>
@@ -93,7 +115,6 @@
     <a class="button" href="blog1.html">Read More</a>
   </div>
 
-  <!-- Add more posts below this -->
   <div class="blog-post">
     <h3>🧠 Mindset Over Motivation (Coming Soon)</h3>
     <p>Motivation fades, but mindset builds habits. This is how I keep going even when it’s hard.</p>
