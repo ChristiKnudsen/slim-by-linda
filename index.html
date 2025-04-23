@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Slim by Linda</title>
   <style>
     body {
@@ -13,10 +14,14 @@
     }
 
     header {
-      background-color: #f48fb1; /* soft pink */
+      background-color: #f48fb1;
       color: white;
       padding: 60px 20px;
       text-align: center;
+    }
+
+    nav {
+      margin-top: 20px;
     }
 
     nav a {
@@ -24,8 +29,6 @@
       color: white;
       text-decoration: none;
       font-weight: bold;
-      font-size: 16px;
-      transition: 0.3s;
     }
 
     nav a:hover {
@@ -72,6 +75,28 @@
       font-size: 0.9em;
       color: #666;
     }
+
+    /* Mobile Responsive */
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      section {
+        padding: 30px 15px;
+      }
+
+      .button {
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      img.placeholder {
+        width: 100%;
+        height: auto;
+      }
+    }
   </style>
 </head>
 <body>
@@ -80,12 +105,12 @@
   <h1>Slim by Linda</h1>
   <p>My journey to becoming my best self, one healthy habit at a time 🌱</p>
   <nav>
-  <a href="#about">About</a>
-  <a href="#journey">Journey</a>
-  <a href="#tips">Tips</a>
-  <a href="blog.html">Blog</a>
-  <a href="#contact">Contact</a>
-</nav>
+    <a href="#about">About</a>
+    <a href="#journey">Journey</a>
+    <a href="#tips">Tips</a>
+    <a href="blog.html">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <section id="about">
@@ -122,43 +147,4 @@
 
 </body>
 </html>
-<!-- ... everything above stays the same ... -->
-
-<section id="tips">
-  <h2>Health & Mindset Tips</h2>
-  <p>✦ Start small and be consistent<br>
-     ✦ Sleep, hydration, and food matter more than perfection<br>
-     ✦ Don't chase skinny. Chase strength, peace, and clarity.</p>
-  <img class="placeholder" src="https://via.placeholder.com/500x300.png?text=Meal+Ideas+or+Quotes" alt="Tips">
-</section>
-
-<!-- 🌟 BLOG SECTION STARTS HERE -->
-<section id="blog">
-  <h2>Blog</h2>
-
-  <div style="background: #fce4ec; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
-    <h3>🌸 5 Things I Learned in My First Month</h3>
-    <p>From struggling with cravings to loving low-carb cooking — here's what surprised me most...</p>
-    <a class="button" href="blog1.html">Read More</a>
-  </div>
-
-  <div style="background: #fce4ec; padding: 20px; border-radius: 10px;">
-    <h3>🧠 Mindset Over Motivation</h3>
-    <p>Motivation fades, but mindset builds habits. This is how I keep going even when it’s hard.</p>
-   <a class="button" href="#">Read More</a>
-
-  </div>
-</section>
-<!-- 🌟 BLOG SECTION ENDS -->
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Have questions, want to collab, or just say hi?</p>
-  <p>Email me: <a href="mailto:linda@slimbylinda.com">linda@slimbylinda.com</a></p>
-  <a class="button" href="https://www.instagram.com/slimbylinda" target="_blank">Follow on Instagram</a>
-</section>
-
-<footer>
-  &copy; 2025 Slim by Linda. Built with love 💗💚
-</footer>
 
