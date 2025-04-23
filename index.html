@@ -4,39 +4,52 @@
   <meta charset="UTF-8">
   <title>Slim by Linda</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 60px;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    h1 {
-      font-size: 3em;
-      color: #4CAF50;
-    }
-    p {
-      font-size: 1.2em;
-      margin-bottom: 30px;
-    }
-    a.button {
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fdfdfd; color: #333; }
+    header, section { padding: 60px 20px; text-align: center; }
+    header { background: #4CAF50; color: white; }
+    h1, h2 { margin-bottom: 20px; }
+    nav a { margin: 0 15px; color: white; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    .button {
       display: inline-block;
+      margin-top: 20px;
       padding: 12px 24px;
       background-color: #4CAF50;
       color: white;
-      text-decoration: none;
       border-radius: 6px;
+      text-decoration: none;
       font-weight: bold;
-    }
-    a.button:hover {
-      background-color: #45a049;
     }
   </style>
 </head>
 <body>
+
+<header>
   <h1>Slim by Linda</h1>
-  <p>Join me on my journey to lose 36kg in 7 months. Real, raw, and unapologetically me!</p>
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#journey">My Journey</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hi! I’m Linda — A Namibian living in Norway, passionate about health, healing, and becoming the best version of myself. I'm on a mission to lose 36kg in 7 months and help others do the same — with love, honesty, and no shortcuts.</p>
+</section>
+
+<section id="journey">
+  <h2>My Journey</h2>
+  <p>I started this journey after realizing how much my energy, mood, and self-love were tied to my health. From low-carb meals to better sleep, everything I do is intentional. You can follow my journey on YouTube, where I share updates, real talk, and raw moments.</p>
   <a class="button" href="https://www.youtube.com/@slimbylinda" target="_blank">Watch on YouTube</a>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Have questions, want to collab, or just say hi?</p>
+  <p>Email me: <a href="mailto:linda@slimbylinda.com">linda@slimbylinda.com</a></p>
+</section>
+
 </body>
 </html>
-Add initial homepage
+Replaced homepage with full version including About Me section
